@@ -1,0 +1,27 @@
+.eslintignore
+.eslintrc
+.eslintrc.json
+.gitlab-ci.yml
+.husky/
+.prettierrc
+.releaserc
+*.spec.js
+*.test.js
+jest.config.js
+node_modules/
+src/
+test/
+tsconfig.json
+webpack.config.js
+.storybook/
+.npmrc
+.nvmrc
+
+*.stories.ts
+*.stories.tsx
+src/stories/**
+.storybook/**
+
+
+# Ensure these aren't ignored (this is just for clarity, but adjust based on your build directory)
+!dist/

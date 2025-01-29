@@ -1,0 +1,4 @@
+*.d.ts
+dist
+jest.config.js
+.local
