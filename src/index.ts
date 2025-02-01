@@ -385,14 +385,14 @@ export default class Logger {
     };
 
     const body = JSON.stringify({
-      applicationId: this.applicationId,
+      application_id: this.applicationId,
       method,
       message: data.map((item) => Logger.serializeError(item)),
       language: 'javascript',
       timestamp: Date.now(),
       filename,
-      lineNumber,
-      columnNumber
+      line_number: lineNumber,
+      column_number: columnNumber
     });
 
     fetch(apiUri, { method: 'POST', headers, body }).catch((error) => {
