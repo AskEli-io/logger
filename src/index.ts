@@ -386,13 +386,13 @@ export default class Logger {
 
     const body = JSON.stringify({
       application_id: this.applicationId,
-      method,
-      message: data.map((item) => Logger.serializeError(item)),
-      language: 'javascript',
-      timestamp: Date.now(),
+      column_number: columnNumber,
       filename,
+      language: 'javascript',
       line_number: lineNumber,
-      column_number: columnNumber
+      message: data.map((item) => Logger.serializeError(item)),
+      method,
+      timestamp: Date.now()
     });
 
     fetch(apiUri, { method: 'POST', headers, body }).catch((error) => {
