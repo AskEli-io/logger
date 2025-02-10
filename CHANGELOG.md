@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/AskEli-io/logger/compare/v1.1.1...v1.1.2) (2025-02-10)
+
+
+### Bug Fixes
+
+* **NEX-1:** Updated domain endpoint ([274a207](https://github.com/AskEli-io/logger/commit/274a207256ff4b473af546cf029b1bb3b384e500))
+
 ## [1.1.1](https://github.com/AskEli-io/logger/compare/v1.1.0...v1.1.1) (2025-02-08)
 
 
