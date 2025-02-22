@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/AskEli-io/logger/compare/v1.1.2...v1.1.3) (2025-02-22)
+
+
+### Bug Fixes
+
+* **NEX-1:** Added apiUri as configurable prop for testing ([cab217f](https://github.com/AskEli-io/logger/commit/cab217f496039ead08a8b4c2636f492341c79e5d))
+
 ## [1.1.2](https://github.com/AskEli-io/logger/compare/v1.1.1...v1.1.2) (2025-02-10)
 
 
