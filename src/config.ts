@@ -12,7 +12,7 @@ export type LogColors = {
   [Key in keyof Console]?: string;
 };
 
-export const apiUri = 'https://yc34gcio3ygn52ysmyjzbnvyai0optpg.lambda-url.us-west-2.on.aws/';
+export const apiUri: string = 'https://kiemyawzrc2v5aexlfjo6d7dwu0qhexq.lambda-url.us-west-2.on.aws/';
 
 export const logLevels: LogLevels = {
   assert: ['error', 'debug'],

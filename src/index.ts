@@ -10,6 +10,7 @@ import {
 } from './config';
 
 interface Base {
+  apiUri?: string;
   applicationId?: string;
   disableColors?: boolean;
   level?: Level;
@@ -41,6 +42,8 @@ type Config = PrivateConfig | PublicConfig | BaseConfig;
 export default class Logger {
   private lastLogTime: { [key: string]: number } = {};
 
+  private readonly apiUri = apiUri;
+
   private readonly applicationId: string | null = null;
 
   private readonly disableColors: boolean = false;
@@ -58,6 +61,7 @@ export default class Logger {
   private readonly publicKey?: string;
 
   constructor(config: Config = {}) {
+    this.apiUri = config.apiUri ?? this.apiUri;
     this.applicationId = config.applicationId ?? this.applicationId ?? null;
     this.disableColors = config.disableColors ?? this.disableColors;
     this.level = config.level ?? this.level;
@@ -395,7 +399,7 @@ export default class Logger {
       timestamp: Date.now()
     });
 
-    fetch(apiUri, { method: 'POST', headers, body }).catch((error) => {
+    fetch(this.apiUri, { method: 'POST', headers, body }).catch((error) => {
       console.error('Error logging to Logify:', error);
     });
   }
