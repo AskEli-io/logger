@@ -12,7 +12,7 @@ export type LogColors = {
   [Key in keyof Console]?: string;
 };
 
-export const apiUri: string = 'https://kiemyawzrc2v5aexlfjo6d7dwu0qhexq.lambda-url.us-west-2.on.aws/';
+export const apiUri: string = 'https://api.askeli.io/logger/application';
 
 export const logLevels: LogLevels = {
   assert: ['error', 'debug'],
