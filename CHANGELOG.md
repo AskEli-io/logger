@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/AskEli-io/logger/compare/v1.1.3...v1.1.4) (2025-02-23)
+
+
+### Bug Fixes
+
+* **NEX-1:** Added custom apiUri ([a430e0a](https://github.com/AskEli-io/logger/commit/a430e0ac657beef7a092dbf937bbf4b4a9524416))
+
 ## [1.1.3](https://github.com/AskEli-io/logger/compare/v1.1.2...v1.1.3) (2025-02-22)
 
 
